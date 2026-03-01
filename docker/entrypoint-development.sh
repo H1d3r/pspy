@@ -4,7 +4,7 @@ set -e
 
 sudo cron -f &
 sleep 1
-sudo ps | grep cron 1>/dev/null
+ps -auxf | grep cron 1>/dev/null
 echo "[+] cron started"
 
 echo "[+] Running as user `id`"
